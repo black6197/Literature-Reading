@@ -1,0 +1,8 @@
+# MkDocs 核心
+mkdocs>=1.5.0
+
+# Markdown 扩展支持
+pymdown-extensions>=10.0
+
+# 数学公式支持（可选）
+# mkdocs-material>=9.0.0

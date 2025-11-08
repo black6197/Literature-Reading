@@ -1,0 +1,51 @@
+site_name: Literature Reading
+site_description: 文献阅读笔记与学术资源整理
+site_author: Black
+
+# 仓库信息（替换为您的实际仓库地址）
+repo_name: black6197/Literature-Reading
+repo_url: https://github.com/black6197/Literature-Reading
+
+# 主题配置
+theme:
+  name: readthedocs
+  language: zh
+  
+# 导航结构
+nav:
+  - 首页: index.md
+  - 论文笔记:
+    - 强化学习:
+      - papers/reinforcement-learning/index.md
+    - Transformer:
+      - papers/transformer/index.md
+    - 足球分析:
+      - papers/soccer-analytics/index.md
+  - 读书笔记:
+    - notes/index.md
+  - 待读清单: reading-list.md
+  - 关于: about.md
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - toc:
+      permalink: true
+  - footnotes
+  - tables
+  - attr_list
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# 额外配置
+extra:
+  search:
+    language: 'zh'
