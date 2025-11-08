@@ -33,7 +33,10 @@ markdown_extensions:
       linenums: true
   - toc:
       permalink: true
-  - footnotes
+  - footnotes  # 启用脚注
+  - pymdownx.caret  # 启用上标
+  - pymdownx.mark
+  - pymdownx.tilde
   - tables
   - attr_list
   - def_list
