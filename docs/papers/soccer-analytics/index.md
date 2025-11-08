@@ -25,7 +25,7 @@
 (4) 一些展示我们最有趣结果和见解的应用案例；
 (5) 一个Python包<sup style="color: red;">1</sup>，它(a)将现有事件流数据转换为我们的语言，(b)实现我们的框架，以及(c)构建一个估计进球和失球概率的模型。
 
-> <sup style="color: red;">1</sup>   https://github.com/ML-KULeuven/socceraction
+> <sup style="color: red;">1</sup>https://github.com/ML-KULeuven/socceraction
 
 ## 2 SPADL：描述球员行动的语言
 
