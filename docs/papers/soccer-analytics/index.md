@@ -25,8 +25,9 @@
 (4) 一些展示我们最有趣结果和见解的应用案例；
 (5) 一个Python包<sup style="color: red;">1</sup>，它(a)将现有事件流数据转换为我们的语言，(b)实现我们的框架，以及(c)构建一个估计进球和失球概率的模型。
 
-> <sup style="color: red;">1</sup> [https://github.com/ML-KULeuven/socceraction](https://github.com/ML-KULeuven/socceraction)
-> 
+> <div style="border-left: 4px solid #d32f2f; padding-left: 12px;">
+> <sup class="ref">1</sup> https://github.com/ML-KULeuven/socceraction
+> </div>
 
 ## 2 SPADL：描述球员行动的语言
 
@@ -169,7 +170,7 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 
 ### 5.2 将我们的VAEP球员评分与传统球员表现指标比较
 
-目前，球员的进攻贡献通常通过计算进球和助攻来量化，因为这些事件直接影响比分。2因此，我们将我们的VAEP球员评分与以下三个基线指标进行比较：每90分钟进球数、每90分钟助攻数和每90分钟进球+助攻数。我们通过产生2017/2018英超赛季每个指标的前10名列表来研究这些指标识别顶级球员的能力，如**表1**所示。每90分钟进球数前10名由专注于完成而非创造得分机会的前锋组成。类似地，每90分钟助攻数前10名主要由专门为队友创造机会的中场组成。此外，每90分钟进球+助攻数的排名旨在在这两种原型之间取得平衡。
+目前，球员的进攻贡献通常通过计算进球和助攻来量化，因为这些事件直接影响比分。<sup style="color: red;">2</sup>因此，我们将我们的VAEP球员评分与以下三个基线指标进行比较：每90分钟进球数、每90分钟助攻数和每90分钟进球+助攻数。我们通过产生2017/2018英超赛季每个指标的前10名列表来研究这些指标识别顶级球员的能力，如**表1**所示。每90分钟进球数前10名由专注于完成而非创造得分机会的前锋组成。类似地，每90分钟助攻数前10名主要由专门为队友创造机会的中场组成。此外，每90分钟进球+助攻数的排名旨在在这两种原型之间取得平衡。
 
 <img width="1207" height="3072" alt="image 6" src="https://github.com/user-attachments/assets/7a7ee26c-7bb9-434a-926c-cfb777ce88db" />
 表1：2017/2018英超赛季至少踢满900分钟的前10名球员，按照(g)进球数、(a)助攻数、(g+a)进球+助攻数和(vaep)我们的VAEP球员评分排名。Rm表示该球员在305名球员中按指标m的排名。市场价值表示根据Transfermarkt.de网站2019年2月1日的球员市场价值。(a) 按每90分钟进球数(g/90)排名的前10名球员；(b) 按每90分钟助攻数(a/90)排名的前10名球员；(c) 按每90分钟进球+助攻数(g+a/90)排名的前10名球员；(d) 按我们的VAEP球员评分排名的前10名球员
@@ -185,10 +186,10 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 <img width="781" height="745" alt="image 7" src="https://github.com/user-attachments/assets/684ba3af-847a-4a23-acf6-9508770757aa" />
 表2：在2017/2018赛季按照我们的VAEP球员评分排名的1997年1月1日后出生的前5名球员，分别在(a)更具竞争力的英格兰和西班牙联赛，以及(b)较小的法国、荷兰和比利时联赛。(a) 英格兰和西班牙联赛中的年轻人才。；(b) 法国、荷兰和比利时联赛中的年轻人才。
 
-马库斯·拉什福德，3在2019年1月与皇家马德里1.1亿欧元的转会联系，以及乌斯曼·登贝莱，在2017年8月以1.2亿欧元的转会费加盟巴塞罗那，是**表2a**中最著名的球员。相比之下，排名第四但知名度较低的乔恩乔·肯尼的估计市场价值远低于这两位球员，原因有二。首先，肯尼是一名防守型球员，这类球员通常被俱乐部和球迷估值较低。其次，肯尼效力于中游俱乐部埃弗顿，那里只有少数世界级球员。尽管如此，我们的球员评分表明他的估值应远高于目前500万欧元的估计市场价值。
+马库斯·拉什福德，<sup style="color: red;">3</sup>在2019年1月与皇家马德里1.1亿欧元的转会联系，以及乌斯曼·登贝莱，在2017年8月以1.2亿欧元的转会费加盟巴塞罗那，是**表2a**中最著名的球员。相比之下，排名第四但知名度较低的乔恩乔·肯尼的估计市场价值远低于这两位球员，原因有二。首先，肯尼是一名防守型球员，这类球员通常被俱乐部和球迷估值较低。其次，肯尼效力于中游俱乐部埃弗顿，那里只有少数世界级球员。尽管如此，我们的球员评分表明他的估值应远高于目前500万欧元的估计市场价值。
 
-> 2 [https://www.squawka.com/en/news/every-player-with-10-goals-and-10-assists-ineuropes-top-five-leagues-this-season-ranked-by-contribution-per-90/1031863](https://www.squawka.com/en/news/every-player-with-10-goals-and-10-assists-ineuropes-top-five-leagues-this-season-ranked-by-contribution-per-90/1031863)  
-3 [https://www.thesun.co.uk/sport/football/8318008/real-madrid-marcus-rashfordtransfer-man-utd/](https://www.thesun.co.uk/sport/football/8318008/real-madrid-marcus-rashfordtransfer-man-utd/)
+> <sup style="color: red;">2</sup> [https://www.squawka.com/en/news/every-player-with-10-goals-and-10-assists-ineuropes-top-five-leagues-this-season-ranked-by-contribution-per-90/1031863](https://www.squawka.com/en/news/every-player-with-10-goals-and-10-assists-ineuropes-top-five-leagues-this-season-ranked-by-contribution-per-90/1031863)  
+> <sup style="color: red;">3</sup> [https://www.thesun.co.uk/sport/football/8318008/real-madrid-marcus-rashfordtransfer-man-utd/](https://www.thesun.co.uk/sport/football/8318008/real-madrid-marcus-rashfordtransfer-man-utd/)
 > 
 
 戴维·内雷斯位居**表2b**榜首。2017年夏天，当阿贾克斯以1500万欧元引进这位边锋时，他成为荷兰联赛第四昂贵的转入球员。他现在是顶级俱乐部利物浦、切尔西和阿森纳的转会目标，这些俱乐部都希望在2019年夏天签下他。排名第二的梅森·芒特从切尔西租借到荷兰球队维特斯一个赛季，并获得了维特斯年度最佳球员奖。排名第四的基利安·姆巴佩在2018年世界杯上获得了最佳年轻球员奖，而马尔科姆（2018年夏天，转会费4100万欧元）和弗伦基·德容（2019年夏天，转会费7500万欧元）都已与巴塞罗那签约。
@@ -210,9 +211,9 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 
 ### 5.5 权衡行动质量和数量
 
-行动质量和数量之间存在自然张力。如果一名球员执行大量行动，那么每个行动拥有高价值就更难。**图3a**显示了在2017/2018赛季西班牙和英格兰联赛中至少踢满900分钟的球员平均每90分钟执行的行动数量（数量）和这些行动的平均价值（质量）。灰色虚线等值线显示了排名第一的梅西与其他人在VAEP评分上的差距。等值线是弯曲的，因为球员的评分是通过将每个行动的平均价值（x轴）和平均行动数量（y轴）相乘而获得的。如等值线和更传统的统计数据所示，4梅西显然是独一无二的。
+行动质量和数量之间存在自然张力。如果一名球员执行大量行动，那么每个行动拥有高价值就更难。**图3a**显示了在2017/2018赛季西班牙和英格兰联赛中至少踢满900分钟的球员平均每90分钟执行的行动数量（数量）和这些行动的平均价值（质量）。灰色虚线等值线显示了排名第一的梅西与其他人在VAEP评分上的差距。等值线是弯曲的，因为球员的评分是通过将每个行动的平均价值（x轴）和平均行动数量（y轴）相乘而获得的。如等值线和更传统的统计数据所示，<sup style="color: red;">4</sup>梅西显然是独一无二的。
 
-> 4 [https://fivethirtyeight.com/features/lionel-messi-is-impossible/](https://fivethirtyeight.com/features/lionel-messi-is-impossible/)
+> <sup style="color: red;">4</sup> [https://fivethirtyeight.com/features/lionel-messi-is-impossible/](https://fivethirtyeight.com/features/lionel-messi-is-impossible/)
 > 
 
 放大**图3a**，**图3b**显示了2017/2018英超赛季的前10名球员。前锋哈里·凯恩和穆罕默德·萨拉赫执行的行动数量相对较少，但他们的行动平均价值很高。中场球员凯文·德布劳内和保罗·博格巴执行更多行动，尽管每个行动的平均价值较低。菲利普·库蒂尼奥、阿扎尔、里亚德·马赫雷斯、安东尼·马夏尔、拉希姆·斯特林和孙兴慜介于这两种原型之间，在行动质量和数量之间找到了一个甜蜜点。
@@ -235,9 +236,9 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 
 #### 5.6.2 特征集的选择
 
-大多数分析足球事件数据的现有模型只使用位置和行动类型数据[1, 8]。为了评估我们全面特征集（第4节详述）的有用性，我们将其与四个基线特征集进行比较：无特征、5位置、行动类型和位置+行动类型（**表3**）。
+大多数分析足球事件数据的现有模型只使用位置和行动类型数据[1, 8]。为了评估我们全面特征集（第4节详述）的有用性，我们将其与四个基线特征集进行比较：无特征、<sup style="color: red;">5</sup>位置、行动类型和位置+行动类型（**表3**）。
 
-> 5 *The no features baseline always predicts the mean class probability, i.e., if our data  set contains 1.5% positive examples, we always predict 0.015.*
+> <sup style="color: red;">5</sup> *The no features baseline always predicts the mean class probability, i.e., if our data  set contains 1.5% positive examples, we always predict 0.015.*
 > 
 
 我们使用CatBoost算法评估每个特征集。对于估计Pscores和Pconcedes，我们的特征集在两个评估指标上都优于基线特征集。这一结果表明，我们的特征捕捉了基线特征集中缺失的重要比赛状态上下文。
@@ -296,14 +297,15 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 
 本文的所有实验均在Python中进行。我们评估了四种流行学习算法的性能：
 
-- **逻辑回归**：我们使用了scikit-learn⁶ Python包中的实现。我们使用了L2正则化惩罚，并使用L-BFGS作为优化问题的求解器。
-- **随机森林**：我们使用了scikit-learn⁷ Python包中的实现。我们使用40个并行线程训练了100棵树的森林。
-- **XGBoost**：我们使用了官方Python实现⁸。我们使用40个并行线程训练了100棵最大深度为3的树，学习率为0.1。
-- **CatBoost**：我们使用了Yandex的官方Python实现⁹。我们将所有参数设置为默认值，除了并行线程数，我们设置为40。
+- **逻辑回归**：我们使用了scikit-learn<sup style="color: red;">6</sup> Python包中的实现。我们使用了L2正则化惩罚，并使用L-BFGS作为优化问题的求解器。
+- **随机森林**：我们使用了scikit-learn<sup style="color: red;">7</sup> Python包中的实现。我们使用40个并行线程训练了100棵树的森林。
+- **XGBoost**：我们使用了官方Python实现<sup style="color: red;">8</sup>。我们使用40个并行线程训练了100棵最大深度为3的树，学习率为0.1。
+- **CatBoost**：我们使用了Yandex的官方Python实现<sup style="color: red;">9</sup>。我们将所有参数设置为默认值，除了并行线程数，我们设置为40。
 
-> ⁶ [https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)  ⁷ [https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)  
-⁸ [https://xgboost.ai](https://xgboost.ai/)  
-⁹ [https://tech.yandex.com/catboost/](https://tech.yandex.com/catboost/)
+> <sup style="color: red;">6</sup> [https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+> <sup style="color: red;">7</sup> [https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+> <sup style="color: red;">8</sup> [https://xgboost.ai](https://xgboost.ai/)
+> <sup style="color: red;">9</sup> [https://tech.yandex.com/catboost/](https://tech.yandex.com/catboost/)
 > 
 
 我们在运行Ubuntu 16.04、配备128GB RAM和两个Xeon(R) CPU E5-2630 v4 @ 2.20GHz类型CPU的计算服务器上训练和评估了所有模型，提供最多20个核心和40个线程。**表5**中提供了每个学习算法在每个任务上的运行时间。
