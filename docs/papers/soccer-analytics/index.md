@@ -10,7 +10,7 @@
 
 足球运动员的行动如何影响其团队在比赛中的表现？这个问题与足球俱乐部内的多项任务相关，如球员引进、球员评估和球探工作。这对媒体和增强球迷参与度也很重要，因为球迷最喜欢的莫过于比较球员并争论为何他们最喜爱的球员比其他人更优秀。然而，客观量化足球运动员在比赛中执行的个人行动影响的任务至今仍基本未被探索。使这项任务复杂化的是足球比赛进球少且动态性强的特点。虽然大多数行动不会直接影响比分，但它们通常会产生重要的长期效果。例如，从一侧边路到另一侧的长传可能不会立即导致进球，但可以打开空间，为几个行动之后的进球机会做准备。
 
-现有的足球行动价值评估方法主要存在三个重要局限性。首先，这些方法在很大程度上忽略了进球和射门以外的行动，因为迄今为止的大多数研究都集中在射门尝试的期望值概念上[^1][^5][^20][^21]。其次，现有方法倾向于为每个行动分配固定价值，而不考虑执行该行动的环境。例如，许多基于传球的指标对待在毫无压力下防守三区的防守队员之间的传球和在对手重压下进攻三区的攻击队员之间的传球是相似的。第三，大多数方法仅考虑即时效果，而未能考虑行动在后续产生的效果。
+现有的足球行动价值评估方法主要存在三个重要局限性。首先，这些方法在很大程度上忽略了进球和射门以外的行动，因为迄今为止的大多数研究都集中在射门尝试的期望值概念上[**[1]**](#ref-1)[^5][^20][^21]。其次，现有方法倾向于为每个行动分配固定价值，而不考虑执行该行动的环境。例如，许多基于传球的指标对待在毫无压力下防守三区的防守队员之间的传球和在对手重压下进攻三区的攻击队员之间的传球是相似的。第三，大多数方法仅考虑即时效果，而未能考虑行动在后续产生的效果。
 
 为了填补客观量化球员表现的空白，本文提出了一个评估足球比赛中行动的新型数据驱动框架。与大多数现有工作不同，它考虑了所有类型的行动（如传球、传中、盘带、过人和射门），并考虑了每个行动发生的环境以及它们可能产生的长期效果。直观来说，行动价值反映了该行动对比分的预期影响。即，价值为+0.05的行动预期会为执行该行动的球队贡献0.05个进球，而价值为-0.05的行动预期会为对手产生0.05个进球。我们的方法符合日益增长的体育数据分析数据科学研究路线（例如[^9][^19][^24][^27]）。
 
@@ -307,18 +307,18 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 表5：每个任务的各学习算法运行时间。两个训练集，分别为2012/2013至2015/2016赛季和2012/13至2016/2017赛季，分别包含8,518,378和11,438,956个动作。两个评估集，分别为2016/2017赛季和2017/2018赛季，分别包含2,920,578和2,988,847个动作。
 
 ## 参考文献
+<a id="ref-1"></a>
+[1] Daniel Altman. 2015. Beyond Shots: A New Approach to Quantifying Scoring Opportunities. (2015). [http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf](http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf) OptaPro Analytics Forum.
 
-[^1] Daniel Altman. 2015. Beyond Shots: A New Approach to Quantifying Scoring Opportunities. (2015). [http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf](http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf) OptaPro Analytics Forum.
+[2] Lotte Bransen, Pieter Robberechts, Jan Van Haaren, and Jesse Davis. 2019. Choke or Shine? Quantifying Soccer Players' Abilities to Perform Under Mental Pressure. In MIT Sloan Sports Analytics Conference.
 
-[^2] Lotte Bransen, Pieter Robberechts, Jan Van Haaren, and Jesse Davis. 2019. Choke or Shine? Quantifying Soccer Players' Abilities to Perform Under Mental Pressure. In MIT Sloan Sports Analytics Conference.
+[3] Lotte Bransen and Jan Van Haaren. 2018. Measuring Football Players' On-the-Ball Contributions from Passes During Games. In ECML/PKDD 2018 Workshop on Machine Learning and Data Mining for Sports Analytics.
 
-[^3] Lotte Bransen and Jan Van Haaren. 2018. Measuring Football Players' On-the-Ball Contributions from Passes During Games. In ECML/PKDD 2018 Workshop on Machine Learning and Data Mining for Sports Analytics.
+[4] Lotte Bransen, Jan Van Haaren, and Michel van de Velden. 2019. Measuring Soccer Players' Contributions to Chance Creation by Valuing Their Passes. Journal of Quantitative Analysis in Sports (2019).
 
-[^4] Lotte Bransen, Jan Van Haaren, and Michel van de Velden. 2019. Measuring Soccer Players' Contributions to Chance Creation by Valuing Their Passes. Journal of Quantitative Analysis in Sports (2019).
+[5] Michael Caley. 2015. Premier League Projections and New Expected Goals. (2015). [https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals](https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals) Cartilage Free Captain.
 
-[^5] Michael Caley. 2015. Premier League Projections and New Expected Goals. (2015). [https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals](https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals) Cartilage Free Captain.
-
-[^6] Dan Cervone, Alexander D'Amour, Luke Bornn, and Kirk Goldsberry. 2014. POINTWISE: Predicting Points and Valuing Decisions in Real Time with NBA Optical Tracking Data. In MIT Sloan Sports Analytics Conference.
+[6] Dan Cervone, Alexander D'Amour, Luke Bornn, and Kirk Goldsberry. 2014. POINTWISE: Predicting Points and Valuing Decisions in Real Time with NBA Optical Tracking Data. In MIT Sloan Sports Analytics Conference.
 
 [^7] Tianqi Chen and Carlos Guestrin. 2016. XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 785–794.
 
