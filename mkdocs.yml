@@ -14,7 +14,7 @@ theme:
 # 导航结构
 nav:
   - 首页: index.md
-  - 论文笔记:
+  - 文献阅读:
     - 强化学习:
       - papers/reinforcement-learning/index.md
     - Transformer:
