@@ -151,8 +151,13 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 
 **图1**展示了我们的框架如何工作，通过可视化2017年12月23日巴塞罗那客场对阵皇家马德里比赛第93分钟的进球前的行动及其相应价值。
 
-<img width="535" height="757" alt="image 5" src="https://github.com/user-attachments/assets/d21bcf05-a25b-4e68-9673-bb8259258e4a" />
+<div style="text-align: center;">
+    <img width="535" height="757" alt="图1" src="https://github.com/user-attachments/assets/d21bcf05-a25b-4e68-9673-bb8259258e4a" />
+</div>
+
+<p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 8px;">
 图1：2017年12月23日巴塞罗那3-0战胜皇家马德里比赛中最后一粒进球前的进攻过程。
+</p>
 
 这次进攻包括六个行动，始于塞尔吉奥·布斯克茨向右边路传球(1)，获得一个中性行动价值0.00，因为它既没有改善也没有恶化局势。随后梅西回传给布斯克茨的传球(2)因为将球向后移动到比之前不太有利的位置而被罚以-0.01的行动价值。布斯克茨给梅西的出色直塞球(3)最终将球移近球门，获得+0.01的行动价值。梅西接球并过掉一名皇马防守队员进入禁区(4)，因为显著提高了进球几率从0.03到0.08而获得+0.05的行动价值。
 
