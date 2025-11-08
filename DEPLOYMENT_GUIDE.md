@@ -60,7 +60,7 @@ git add .
 git commit -m "Initial commit: Setup documentation structure"
 
 # 添加远程仓库（替换 YOUR_USERNAME 为您的 GitHub 用户名）
-git remote add origin https://github.com/YOUR_USERNAME/Literature-Reading.git
+git remote add origin https://github.com/black6197/Literature-Reading.git
 
 # 推送到 GitHub
 git branch -M main
