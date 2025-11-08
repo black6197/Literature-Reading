@@ -10,9 +10,9 @@
 
 足球运动员的行动如何影响其团队在比赛中的表现？这个问题与足球俱乐部内的多项任务相关，如球员引进、球员评估和球探工作。这对媒体和增强球迷参与度也很重要，因为球迷最喜欢的莫过于比较球员并争论为何他们最喜爱的球员比其他人更优秀。然而，客观量化足球运动员在比赛中执行的个人行动影响的任务至今仍基本未被探索。使这项任务复杂化的是足球比赛进球少且动态性强的特点。虽然大多数行动不会直接影响比分，但它们通常会产生重要的长期效果。例如，从一侧边路到另一侧的长传可能不会立即导致进球，但可以打开空间，为几个行动之后的进球机会做准备。
 
-现有的足球行动价值评估方法主要存在三个重要局限性。首先，这些方法在很大程度上忽略了进球和射门以外的行动，因为迄今为止的大多数研究都集中在射门尝试的期望值概念上[1, 5, 20, 21]。其次，现有方法倾向于为每个行动分配固定价值，而不考虑执行该行动的环境。例如，许多基于传球的指标对待在毫无压力下防守三区的防守队员之间的传球和在对手重压下进攻三区的攻击队员之间的传球是相似的。第三，大多数方法仅考虑即时效果，而未能考虑行动在后续产生的效果。
+现有的足球行动价值评估方法主要存在三个重要局限性。首先，这些方法在很大程度上忽略了进球和射门以外的行动，因为迄今为止的大多数研究都集中在射门尝试的期望值概念上[^1][^5][^20][^21]。其次，现有方法倾向于为每个行动分配固定价值，而不考虑执行该行动的环境。例如，许多基于传球的指标对待在毫无压力下防守三区的防守队员之间的传球和在对手重压下进攻三区的攻击队员之间的传球是相似的。第三，大多数方法仅考虑即时效果，而未能考虑行动在后续产生的效果。
 
-为了填补客观量化球员表现的空白，本文提出了一个评估足球比赛中行动的新型数据驱动框架。与大多数现有工作不同，它考虑了所有类型的行动（如传球、传中、盘带、过人和射门），并考虑了每个行动发生的环境以及它们可能产生的长期效果。直观来说，行动价值反映了该行动对比分的预期影响。即，价值为+0.05的行动预期会为执行该行动的球队贡献0.05个进球，而价值为-0.05的行动预期会为对手产生0.05个进球。我们的方法符合日益增长的体育数据分析数据科学研究路线（例如[9, 19, 24, 27]）。
+为了填补客观量化球员表现的空白，本文提出了一个评估足球比赛中行动的新型数据驱动框架。与大多数现有工作不同，它考虑了所有类型的行动（如传球、传中、盘带、过人和射门），并考虑了每个行动发生的环境以及它们可能产生的长期效果。直观来说，行动价值反映了该行动对比分的预期影响。即，价值为+0.05的行动预期会为执行该行动的球队贡献0.05个进球，而价值为-0.05的行动预期会为对手产生0.05个进球。我们的方法符合日益增长的体育数据分析数据科学研究路线（例如[^9][^19][^24][^27]）。
 
 总而言之，本文做出以下五项贡献：
 (1) 一种表示球员行动的语言；
@@ -308,89 +308,32 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 
 ## 参考文献
 
-[1] Daniel Altman. 2015. Beyond Shots: A New Approach to Quantifying Scoring Opportunities. (2015). [http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf](http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf) OptaPro Analytics Forum.
-中文翻译：超越射门：量化得分机会的新方法
-
-[2] Lotte Bransen, Pieter Robberechts, Jan Van Haaren, and Jesse Davis. 2019. Choke or Shine? Quantifying Soccer Players' Abilities to Perform Under Mental Pressure. In MIT Sloan Sports Analytics Conference.
-中文翻译：崩溃或闪耀？量化足球运动员在心理压力下的表现能力
-
-[3] Lotte Bransen and Jan Van Haaren. 2018. Measuring Football Players' On-the-Ball Contributions from Passes During Games. In ECML/PKDD 2018 Workshop on Machine Learning and Data Mining for Sports Analytics.
-中文翻译：测量足球运动员在比赛中通过传球所做的持球贡献
-
-[4] Lotte Bransen, Jan Van Haaren, and Michel van de Velden. 2019. Measuring Soccer Players' Contributions to Chance Creation by Valuing Their Passes. Journal of Quantitative Analysis in Sports (2019).
-中文翻译：通过评估传球价值来衡量足球运动员对创造机会的贡献
-
-[5] Michael Caley. 2015. Premier League Projections and New Expected Goals. (2015). [https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals](https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals) Cartilage Free Captain.
-中文翻译：英超联赛预测和新期望进球
-
-[6] Dan Cervone, Alexander D'Amour, Luke Bornn, and Kirk Goldsberry. 2014. POINTWISE: Predicting Points and Valuing Decisions in Real Time with NBA Optical Tracking Data. In MIT Sloan Sports Analytics Conference.
-中文翻译：POINTWISE：使用NBA光学追踪数据实时预测得分和评估决策
-
-[7] Tianqi Chen and Carlos Guestrin. 2016. XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 785–794.
-中文翻译：XGBoost：一个可扩展的树提升系统
-
-[8] Tom Decroos, Vladimir Dzyuba, Jan Van Haaren, and Jesse Davis. 2017. Predicting Soccer Highlights from Spatio-Temporal Match Event Streams. In Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence. 1302–1308.
-中文翻译：从时空比赛事件流预测足球集锦
-
-[9] Tom Decroos, Jan Van Haaren, and Jesse Davis. 2018. Automatic Discovery of Tactics in Spatio-Temporal Soccer Match Data. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. ACM.
-中文翻译：在时空足球比赛数据中自动发现战术
-
-[10] Tom Decroos, Jan Van Haaren, Vladimir Dzyuba, and Jesse Davis. 2017. STARSS: A Spatio-temporal Action Rating System for Soccer. In ECML/PKDD 2017 Workshop on Machine Learning and Data Mining for Sports Analytics.
-中文翻译：STARSS：足球时空动作评级系统
-
-[11] Javier Fernández, Luke Bornn, and Dan Cervone. 2019. Decomposing the Immeasurable Sport: A Deep Learning Expected Possession Value Framework for Soccer. In MIT Sloan Sports Analytics Conference.
-中文翻译：分解不可测量的运动：足球的深度学习期望控球价值框架
-
-[12] César Ferri, José Hernández-Orallo, and R. Modroiu. 2009. An Experimental Comparison of Performance Measures for Classification. Pattern Recognition Letters 30, 1 (2009), 27–38.
-中文翻译：分类性能度量的实验比较
-
-[13] Keith Goldner. 2012. A Markov Model of Football: Using Stochastic Processes to Model a Football Drive. Journal of Quantitative Analysis in Sports 8, 1 (2012).
-中文翻译：足球的马尔可夫模型：使用随机过程建模足球进攻
-
-[14] Sam Gregory. 2017. How We Assign Credit in Football. (2017). [http://www.optasportspro.com/about/optapro-blog/posts/2017/blog-howwe-assign-credit-in-football/](http://www.optasportspro.com/about/optapro-blog/posts/2017/blog-howwe-assign-credit-in-football/) OptaPro Blog.
-中文翻译：我们如何在足球中分配贡献度
-
-[15] László Gyarmati and Rade Stanojevic. 2016. QPass: A Merit-based Evaluation of Soccer Passes. In KDD 2016 Workshop on Large-Scale Sports Analytics.
-中文翻译：QPass：基于价值的足球传球评估
-
-[16] Nobuyoshi Hirotsu, Michael Wright, et al. 2002. Using a Markov Process Model of an Association Football Match to Determine the Optimal Timing of Substitution and Tactical Decisions. Journal of the Operational Research Society 53, 1 (2002).
-中文翻译：使用足球比赛的马尔可夫过程模型确定换人和战术决策的最佳时机
-
-[17] Ted Knutson. 2017. Introducing xGChain. (2017). [http://www.statsbombservices.com/introducing-xgchain](http://www.statsbombservices.com/introducing-xgchain) StatsBomb IQ Services.
-中文翻译：介绍xGChain
-
-[18] Michael Littman. 1994. Markov Games as a Framework for Multi-Agent Reinforcement Learning. In Proceedings of the International Conference on Machine Learning.
-中文翻译：马尔可夫博弈作为多智能体强化学习的框架
-
-[19] Guiliang Liu and Oliver Schulte. 2018. Deep Reinforcement Learning in Ice Hockey for Context-Aware Player Evaluation. In Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence. 3442–3448.
-中文翻译：冰球中的深度强化学习用于上下文感知的球员评估
-
-[20] Patrick Lucey, Alina Bialkowski, Mathew Monfort, Peter Carr, and Iain Matthews. 2014. Quality vs. Quantity: Improved Shot Prediction in Soccer Using Strategic Features from Spatiotemporal Data. In MIT Sloan Sports Analytics Conference.
-中文翻译：质量与数量：利用时空数据的战略特征改进足球射门预测
-
-[21] Nils Mackay. [n.d.]. Predicting Goal Probabilities for Possessions in Football. Master's thesis. Vrije Universiteit Amsterdam.
-中文翻译：预测足球控球阶段的进球概率
-
-[22] Alexandru Niculescu-Mizil and Rich Caruana. 2005. Predicting Good Probabilities with Supervised Learning. In Proceedings of the Twenty-Second International Conference on Machine Learning. 625–632.
-中文翻译：使用监督学习预测良好概率
-
-[23] Olav Nørstebø, Vegard Rødseth Bjertnes, and Eirik Vabo. 2016. Valuing Individual Player Involvements in Norwegian Association Football. Master's thesis. Norwegian University of Science and Technology.
-中文翻译：评估挪威足球协会中个体球员参与的价值
-
-[24] Luca Pappalardo, Paolo Cintia, et al. 2018. PlayeRank: data-driven performance evaluation and player ranking in soccer via a machine learning approach. arXiv preprint arXiv:1802.04987 (2018).
-中文翻译：PlayeRank：通过机器学习方法进行足球数据驱动的表现评估和球员排名
-
-[25] Fabian Pedregosa, Gaël Varoquaux, et al. 2011. scikit-learn: Machine Learning in Python. Journal of Machine Learning Research 12, Oct (2011), 2825–2830.
-中文翻译：scikit-learn：Python中的机器学习
-
-[26] Liudmila Prokhorenkova, Gleb Gusev, Aleksandr Vorobev, Anna Veronika Dorogush, and Andrey Gulin. 2018. CatBoost: Unbiased Boosting with Categorical Features. In Advances in Neural Information Processing Systems. 6639–6649.
-中文翻译：CatBoost：具有类别特征的无偏提升
-
-[27] Kurt Routley and Oliver Schulte. 2015. A Markov Game Model for Valuing Player Actions in Ice Hockey. In Proceedings of the Thirty-First Conference on Uncertainty in Artificial Intelligence. 782–791.
-中文翻译：用于评估冰球中球员行动的马尔可夫博弈模型
-
-[28] Sarah Rudd. 2011. A Framework for Tactical Analysis and Individual Offensive Production Assessment in Soccer Using Markov Chains. In New England Symposium on Statistics in Sports. [http://nessis.org/nessis11/rudd.pdf](http://nessis.org/nessis11/rudd.pdf)
-中文翻译：使用马尔可夫链进行足球战术分析和个人进攻产出评估的框架
-
-[29] Tom Tango, Mitchel Lichtman, and Andrew Dolphin. 2007. The Book: Playing the Percentages in Baseball. Potomac Books, Inc.
-中文翻译：这本书：在棒球中发挥百分比
+[^1] Daniel Altman. 2015. Beyond Shots: A New Approach to Quantifying Scoring Opportunities. (2015). [http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf](http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf) OptaPro Analytics Forum.
+[^2] Lotte Bransen, Pieter Robberechts, Jan Van Haaren, and Jesse Davis. 2019. Choke or Shine? Quantifying Soccer Players' Abilities to Perform Under Mental Pressure. In MIT Sloan Sports Analytics Conference.
+[^3] Lotte Bransen and Jan Van Haaren. 2018. Measuring Football Players' On-the-Ball Contributions from Passes During Games. In ECML/PKDD 2018 Workshop on Machine Learning and Data Mining for Sports Analytics.
+[^4] Lotte Bransen, Jan Van Haaren, and Michel van de Velden. 2019. Measuring Soccer Players' Contributions to Chance Creation by Valuing Their Passes. Journal of Quantitative Analysis in Sports (2019).
+[^5] Michael Caley. 2015. Premier League Projections and New Expected Goals. (2015). [https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals](https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals) Cartilage Free Captain.
+[^6] Dan Cervone, Alexander D'Amour, Luke Bornn, and Kirk Goldsberry. 2014. POINTWISE: Predicting Points and Valuing Decisions in Real Time with NBA Optical Tracking Data. In MIT Sloan Sports Analytics Conference.
+[^7] Tianqi Chen and Carlos Guestrin. 2016. XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 785–794.
+[^8] Tom Decroos, Vladimir Dzyuba, Jan Van Haaren, and Jesse Davis. 2017. Predicting Soccer Highlights from Spatio-Temporal Match Event Streams. In Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence. 1302–1308.
+[^9] Tom Decroos, Jan Van Haaren, and Jesse Davis. 2018. Automatic Discovery of Tactics in Spatio-Temporal Soccer Match Data. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. ACM.
+[^10] Tom Decroos, Jan Van Haaren, Vladimir Dzyuba, and Jesse Davis. 2017. STARSS: A Spatio-temporal Action Rating System for Soccer. In ECML/PKDD 2017 Workshop on Machine Learning and Data Mining for Sports Analytics.
+[^11] Javier Fernández, Luke Bornn, and Dan Cervone. 2019. Decomposing the Immeasurable Sport: A Deep Learning Expected Possession Value Framework for Soccer. In MIT Sloan Sports Analytics Conference.
+[^12] César Ferri, José Hernández-Orallo, and R. Modroiu. 2009. An Experimental Comparison of Performance Measures for Classification. Pattern Recognition Letters 30, 1 (2009), 27–38.
+[^13] Keith Goldner. 2012. A Markov Model of Football: Using Stochastic Processes to Model a Football Drive. Journal of Quantitative Analysis in Sports 8, 1 (2012).
+[^14] Sam Gregory. 2017. How We Assign Credit in Football. (2017). [http://www.optasportspro.com/about/optapro-blog/posts/2017/blog-howwe-assign-credit-in-football/](http://www.optasportspro.com/about/optapro-blog/posts/2017/blog-howwe-assign-credit-in-football/) OptaPro Blog.
+[^15] László Gyarmati and Rade Stanojevic. 2016. QPass: A Merit-based Evaluation of Soccer Passes. In KDD 2016 Workshop on Large-Scale Sports Analytics.
+[^16] Nobuyoshi Hirotsu, Michael Wright, et al. 2002. Using a Markov Process Model of an Association Football Match to Determine the Optimal Timing of Substitution and Tactical Decisions. Journal of the Operational Research Society 53, 1 (2002).
+[^17] Ted Knutson. 2017. Introducing xGChain. (2017). [http://www.statsbombservices.com/introducing-xgchain](http://www.statsbombservices.com/introducing-xgchain) StatsBomb IQ Services.
+[^18] Michael Littman. 1994. Markov Games as a Framework for Multi-Agent Reinforcement Learning. In Proceedings of the International Conference on Machine Learning.
+[^19] Guiliang Liu and Oliver Schulte. 2018. Deep Reinforcement Learning in Ice Hockey for Context-Aware Player Evaluation. In Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence. 3442–3448.
+[^20] Patrick Lucey, Alina Bialkowski, Mathew Monfort, Peter Carr, and Iain Matthews. 2014. Quality vs. Quantity: Improved Shot Prediction in Soccer Using Strategic Features from Spatiotemporal Data. In MIT Sloan Sports Analytics Conference.
+[^21] Nils Mackay. [n.d.]. Predicting Goal Probabilities for Possessions in Football. Master's thesis. Vrije Universiteit Amsterdam.
+[^22] Alexandru Niculescu-Mizil and Rich Caruana. 2005. Predicting Good Probabilities with Supervised Learning. In Proceedings of the Twenty-Second International Conference on Machine Learning. 625–632.
+[^23] Olav Nørstebø, Vegard Rødseth Bjertnes, and Eirik Vabo. 2016. Valuing Individual Player Involvements in Norwegian Association Football. Master's thesis. Norwegian University of Science and Technology.
+[^24] Luca Pappalardo, Paolo Cintia, et al. 2018. PlayeRank: data-driven performance evaluation and player ranking in soccer via a machine learning approach. arXiv preprint arXiv:1802.04987 (2018).
+[^25] Fabian Pedregosa, Gaël Varoquaux, et al. 2011. scikit-learn: Machine Learning in Python. Journal of Machine Learning Research 12, Oct (2011), 2825–2830.
+[^26] Liudmila Prokhorenkova, Gleb Gusev, Aleksandr Vorobev, Anna Veronika Dorogush, and Andrey Gulin. 2018. CatBoost: Unbiased Boosting with Categorical Features. In Advances in Neural Information Processing Systems. 6639–6649.
+[^27] Kurt Routley and Oliver Schulte. 2015. A Markov Game Model for Valuing Player Actions in Ice Hockey. In Proceedings of the Thirty-First Conference on Uncertainty in Artificial Intelligence. 782–791.
+[^28] Sarah Rudd. 2011. A Framework for Tactical Analysis and Individual Offensive Production Assessment in Soccer Using Markov Chains. In New England Symposium on Statistics in Sports. [http://nessis.org/nessis11/rudd.pdf](http://nessis.org/nessis11/rudd.pdf)
+[^29] Tom Tango, Mitchel Lichtman, and Andrew Dolphin. 2007. The Book: Playing the Percentages in Baseball. Potomac Books, Inc.
