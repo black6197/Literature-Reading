@@ -5,6 +5,7 @@
 ## 📖 已阅读
 
 暂无
+<img width="861" height="760" alt="image" src="https://github.com/user-attachments/assets/9cea2006-5446-44de-9034-ce15abcfc5f7" />
 
 ## 📝 核心方法
 
