@@ -309,59 +309,86 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 ## 参考文献
 <a id="ref-1"></a>
 [1] Daniel Altman. 2015. Beyond Shots: A New Approach to Quantifying Scoring Opportunities. (2015). [http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf](http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf) OptaPro Analytics Forum.
+
 <a id="ref-2"></a>
 [2] Lotte Bransen, Pieter Robberechts, Jan Van Haaren, and Jesse Davis. 2019. Choke or Shine? Quantifying Soccer Players' Abilities to Perform Under Mental Pressure. In MIT Sloan Sports Analytics Conference.
+
 <a id="ref-3"></a>
 [3] Lotte Bransen and Jan Van Haaren. 2018. Measuring Football Players' On-the-Ball Contributions from Passes During Games. In ECML/PKDD 2018 Workshop on Machine Learning and Data Mining for Sports Analytics.
+
 <a id="ref-4"></a>
 [4] Lotte Bransen, Jan Van Haaren, and Michel van de Velden. 2019. Measuring Soccer Players' Contributions to Chance Creation by Valuing Their Passes. Journal of Quantitative Analysis in Sports (2019).
 
+<a id="ref-5"></a>
 [5] Michael Caley. 2015. Premier League Projections and New Expected Goals. (2015). [https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals](https://cartilagefreecaptain.sbnation.com/2015/10/19/9295905/premierleague-projections-and-new-expected-goals) Cartilage Free Captain.
 
+<a id="ref-6"></a>
 [6] Dan Cervone, Alexander D'Amour, Luke Bornn, and Kirk Goldsberry. 2014. POINTWISE: Predicting Points and Valuing Decisions in Real Time with NBA Optical Tracking Data. In MIT Sloan Sports Analytics Conference.
 
+<a id="ref-7"></a>
 [^7] Tianqi Chen and Carlos Guestrin. 2016. XGBoost: A Scalable Tree Boosting System. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 785–794.
 
+<a id="ref-8"></a>
 [^8] Tom Decroos, Vladimir Dzyuba, Jan Van Haaren, and Jesse Davis. 2017. Predicting Soccer Highlights from Spatio-Temporal Match Event Streams. In Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence. 1302–1308.
 
+<a id="ref-9"></a>
 [^9] Tom Decroos, Jan Van Haaren, and Jesse Davis. 2018. Automatic Discovery of Tactics in Spatio-Temporal Soccer Match Data. In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. ACM.
 
+<a id="ref-10"></a>
 [^10] Tom Decroos, Jan Van Haaren, Vladimir Dzyuba, and Jesse Davis. 2017. STARSS: A Spatio-temporal Action Rating System for Soccer. In ECML/PKDD 2017 Workshop on Machine Learning and Data Mining for Sports Analytics.
 
+<a id="ref-11"></a>
 [^11] Javier Fernández, Luke Bornn, and Dan Cervone. 2019. Decomposing the Immeasurable Sport: A Deep Learning Expected Possession Value Framework for Soccer. In MIT Sloan Sports Analytics Conference.
 
+<a id="ref-12"></a>
 [^12] César Ferri, José Hernández-Orallo, and R. Modroiu. 2009. An Experimental Comparison of Performance Measures for Classification. Pattern Recognition Letters 30, 1 (2009), 27–38.
 
+<a id="ref-13"></a>
 [^13] Keith Goldner. 2012. A Markov Model of Football: Using Stochastic Processes to Model a Football Drive. Journal of Quantitative Analysis in Sports 8, 1 (2012).
 
+<a id="ref-14"></a>
 [^14] Sam Gregory. 2017. How We Assign Credit in Football. (2017). [http://www.optasportspro.com/about/optapro-blog/posts/2017/blog-howwe-assign-credit-in-football/](http://www.optasportspro.com/about/optapro-blog/posts/2017/blog-howwe-assign-credit-in-football/) OptaPro Blog.
 
+<a id="ref-15"></a>
 [^15] László Gyarmati and Rade Stanojevic. 2016. QPass: A Merit-based Evaluation of Soccer Passes. In KDD 2016 Workshop on Large-Scale Sports Analytics.
 
+<a id="ref-16"></a>
 [^16] Nobuyoshi Hirotsu, Michael Wright, et al. 2002. Using a Markov Process Model of an Association Football Match to Determine the Optimal Timing of Substitution and Tactical Decisions. Journal of the Operational Research Society 53, 1 (2002).
 
+<a id="ref-17"></a>
 [^17] Ted Knutson. 2017. Introducing xGChain. (2017). [http://www.statsbombservices.com/introducing-xgchain](http://www.statsbombservices.com/introducing-xgchain) StatsBomb IQ Services.
 
+<a id="ref-18"></a>
 [^18] Michael Littman. 1994. Markov Games as a Framework for Multi-Agent Reinforcement Learning. In Proceedings of the International Conference on Machine Learning.
 
+<a id="ref-19"></a>
 [^19] Guiliang Liu and Oliver Schulte. 2018. Deep Reinforcement Learning in Ice Hockey for Context-Aware Player Evaluation. In Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence. 3442–3448.
 
+<a id="ref-20"></a>
 [^20] Patrick Lucey, Alina Bialkowski, Mathew Monfort, Peter Carr, and Iain Matthews. 2014. Quality vs. Quantity: Improved Shot Prediction in Soccer Using Strategic Features from Spatiotemporal Data. In MIT Sloan Sports Analytics Conference.
 
+<a id="ref-21"></a>
 [^21] Nils Mackay. [n.d.]. Predicting Goal Probabilities for Possessions in Football. Master's thesis. Vrije Universiteit Amsterdam.
 
+<a id="ref-22"></a>
 [^22] Alexandru Niculescu-Mizil and Rich Caruana. 2005. Predicting Good Probabilities with Supervised Learning. In Proceedings of the Twenty-Second International Conference on Machine Learning. 625–632.
 
+<a id="ref-23"></a>
 [^23] Olav Nørstebø, Vegard Rødseth Bjertnes, and Eirik Vabo. 2016. Valuing Individual Player Involvements in Norwegian Association Football. Master's thesis. Norwegian University of Science and Technology.
 
+<a id="ref-24"></a>
 [^24] Luca Pappalardo, Paolo Cintia, et al. 2018. PlayeRank: data-driven performance evaluation and player ranking in soccer via a machine learning approach. arXiv preprint arXiv:1802.04987 (2018).
 
+<a id="ref-25"></a>
 [^25] Fabian Pedregosa, Gaël Varoquaux, et al. 2011. scikit-learn: Machine Learning in Python. Journal of Machine Learning Research 12, Oct (2011), 2825–2830.
 
+<a id="ref-26"></a>
 [^26] Liudmila Prokhorenkova, Gleb Gusev, Aleksandr Vorobev, Anna Veronika Dorogush, and Andrey Gulin. 2018. CatBoost: Unbiased Boosting with Categorical Features. In Advances in Neural Information Processing Systems. 6639–6649.
 
+<a id="ref-27"></a>
 [^27] Kurt Routley and Oliver Schulte. 2015. A Markov Game Model for Valuing Player Actions in Ice Hockey. In Proceedings of the Thirty-First Conference on Uncertainty in Artificial Intelligence. 782–791.
 
+<a id="ref-28"></a>
 [^28] Sarah Rudd. 2011. A Framework for Tactical Analysis and Individual Offensive Production Assessment in Soccer Using Markov Chains. In New England Symposium on Statistics in Sports. [http://nessis.org/nessis11/rudd.pdf](http://nessis.org/nessis11/rudd.pdf)
 
 [^29] Tom Tango, Mitchel Lichtman, and Andrew Dolphin. 2007. The Book: Playing the Percentages in Baseball. Potomac Books, Inc.
