@@ -57,13 +57,21 @@
 SPADL是描述球员行动的语言，与商业供应商描述事件的格式不同。区别在于行动是事件的子集，需要球员执行行动。例如，传球事件是一个行动，而表示比赛结束的事件不是行动。我们将一场比赛表示为一系列持球行动[a1, a2, ..., am]，其中m是比赛中发生的行动总数。每个行动是九个属性的元组：
 
 StartTime：行动的开始时间，
+
 EndTime：行动的结束时间，
+
 StartLoc：行动开始的(x, y)位置，
+
 EndLoc：行动结束的(x, y)位置，
+
 Player：执行行动的球员，
+
 Team：球员的队伍，
+
 ActionType：行动类型（如传球、射门、盘带），
+
 BodyPart：球员用于行动的身体部位，
+
 Result：行动的结果（如成功或失败）。
 
 注意，与所有其他事件流格式不同，我们始终为每个行动存储相同的九个属性。排除可选信息片段使我们能够更容易地应用自动分析工具。
@@ -83,12 +91,14 @@ Result：行动的结果（如成功或失败）。
 假设对于每个比赛状态Si = [a1, ..., ai]，我们可以获得主队h和客队v在不久的将来进球和失球的概率。让Pscores(Si, h)和Pconcedes(Si, h)分别表示主队h在不久的将来进球和失球的概率。类似地，让Pscores(Si, v)和Pconcedes(Si, v)分别表示客队v在不久的将来进球和失球的概率。
 
 对一个队伍的行动进行评估，需要评估由于行动ai将比赛从状态Si-1转变为状态Si而导致的进球和失球概率的变化。对于队伍x（x可以是主队h或客队v）进球概率的变化可以计算为：
-
-![image.png](image%201.png)
+<div style="text-align: center;">
+    <img width="630" height="43" alt="image 1" src="https://github.com/user-attachments/assets/b204e4cf-8c7e-44ee-b568-ae53925277d5" />
+</div>
 
 如果行动增加了队伍x进球的概率，这个变化将是正值。我们称这个变化ΔPscores(ai, x)为行动ai对队伍x的进攻价值。类似地，队伍x失球概率的变化可以计算为：
-
-![image.png](image%202.png)
+<div style="text-align: center;">
+    <img width="679" height="39" alt="image 2" src="https://github.com/user-attachments/assets/1101e38c-224d-496b-a5e5-a7dd1a6412d9" />
+</div>
 
 如果行动增加了队伍x失球的概率，这个变化将是正值。然而，所有行动应该始终旨在降低失球的概率。这就是为什么我们称这个变化的否定-ΔPconcedes(ai, x)为行动ai对队伍x的防守价值。
 
@@ -306,8 +316,11 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 - **CatBoost**：我们使用了Yandex的官方Python实现<sup style="color: red;">9</sup>。我们将所有参数设置为默认值，除了并行线程数，我们设置为40。
 
 > <sup style="color: red;">6</sup> [https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+> 
 > <sup style="color: red;">7</sup> [https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+> 
 > <sup style="color: red;">8</sup> [https://xgboost.ai](https://xgboost.ai/)
+> 
 > <sup style="color: red;">9</sup> [https://tech.yandex.com/catboost/](https://tech.yandex.com/catboost/)
 > 
 
