@@ -5,26 +5,23 @@
 ## 📚 强化学习相关
 
 ### 教材
-- **Reinforcement Learning: An Introduction** (Sutton & Barto)
-  - 强化学习的经典教材
+- Reinforcement Learning: An Introduction (Sutton & Barto)- 强化学习的经典教材
   
 ### 综述
--  **Deep Reinforcement Learning** - 深度 RL 综述
+-  Deep Reinforcement Learning - 深度 RL 综述
 
 ## ⚽ 足球分析相关
 
 ### 综述文章
--  **A Survey on Deep Learning for Sports Analytics**
-  - 体育分析中的深度学习应用
+-  A Survey on Deep Learning for Sports Analytics- 体育分析中的深度学习应用
 
 ### 书籍
-- **The Numbers Game** - 足球数据分析入门
+- The Numbers Game - 足球数据分析入门
 
 ## 🤖 深度学习相关
 
 ### 教材
--  **Deep Learning** (Goodfellow et al.)
-  - 深度学习的全面介绍
+-  Deep Learning (Goodfellow et al.)- 深度学习的全面介绍
 
 ## 📝 笔记模板
 
