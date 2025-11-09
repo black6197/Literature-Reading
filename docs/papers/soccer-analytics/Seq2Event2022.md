@@ -1,4 +1,4 @@
-# 2022 Seq2Event：基于Transformer的足球事件预测 Seq2Event: Learning the Language of Soccer Using Transformer-based Match Event Prediction
+# Seq2Event：基于Transformer的足球事件预测（2022） 
 
 ![image.png](image.png)
 
