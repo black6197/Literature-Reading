@@ -367,7 +367,7 @@ Pconcedes(Si, v) = P(goal(h) ∈ Fik|Si)
 
 
 
-### 参考文献
+## 参考文献
 <a id="ref-1"></a>
 [1] Daniel Altman. 2015. Beyond Shots: A New Approach to Quantifying Scoring Opportunities. (2015). [http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf](http://northyardanalytics.com/Dan-Altman-NYA-OptaProForum-2015.pdf) OptaPro Analytics Forum.
 
