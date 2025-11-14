@@ -21,7 +21,7 @@ nav:
       - papers/transformer/index.md
     - 足球分析:
       - papers/soccer-analytics/index.md # VAEP2019
-      - Seq2Event: papers/soccer-analytics/Seq2Event2022.md  # 2025/11/14新增
+      - papers/soccer-analytics/Seq2Event2022.md  # 2025/11/14新增
       - Deep_soccer_analytics: papers/soccer-analytics/Deep_soccer_analytics2020.md  # 新增
   - 读书笔记:
     - notes/index.md
