@@ -1,4 +1,4 @@
-# 2020 深度足球分析：学习用于评估足球运动员的动作值函数Deep soccer analytics: learning an action value function for evaluating soccer players
+# 深度足球分析：学习用于评估足球运动员的动作值函数（2020 ）
 <div style="text-align: center;">
     <a href="https://doi.org/10.1007/s10618-020-00705-9">
         <img width="2000" height="497" alt="image" src="https://github.com/user-attachments/assets/9dacc5c3-be45-4400-81d5-d465b8ef7c3c" />
