@@ -1,8 +1,8 @@
 # Seq2Event：基于Transformer的足球事件预测（2022） 
 
 <div style="text-align: center;">
-    <a href="[https://dl.acm.org/doi/abs/10.1145/3292500.3330758](https://dl.acm.org/doi/abs/10.1145/3534678.3539138?casa_token=weQdsmdJHDEAAAAA:jbuRZflYf9Vg-tMKN4fBpnEZCrxXjxuEHW_N3A7kgcKMgi71rYANeG92m-y04z_NS0bDissSXDAE_A)">
-        <img width="610" height="181" alt="image" src="https://github.com/user-attachments/assets/e99164ef-262c-4626-95a5-e739a417d73e" />
+    <a href="https://dl.acm.org/doi/abs/10.1145/3292500.3330758">
+        <img width="2000" height="497" alt="image" src="https://github.com/user-attachments/assets/779f1864-92ad-492e-ac6e-b76de4e32ed1" />
     </a>
 </div>
 
