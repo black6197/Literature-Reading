@@ -444,7 +444,7 @@ QAAR指标将给定球员i下一个行动的预期未来总奖励与给定随机
 
 最终结论(11)应用了方程(7)。
 
-##**References**  
+##**参考文献**  
 <a id="ref-1"></a>
 Albert J, Glickman ME, Swartz TB, Koning RH (2017) Handbook of Statistical Methods and Analyses in Sports. CRC Press, Boca Raton 
 
