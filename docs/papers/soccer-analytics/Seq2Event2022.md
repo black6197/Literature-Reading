@@ -6,7 +6,6 @@
     </a>
 </div>
 
-
 ## 摘要
 
 足球是一项特点为开放性和动态性的运动，球员的行动和角色根据团队战略在多个时间尺度上同时进行调整，并且具有高度的空间自由度。这种复杂性带来了分析上的挑战，迄今为止，解决方案主要是根据特定标准将比赛分解以分析特定问题。我们提出了一种更加整体的方法，在新型Seq2Event模型中利用Transformer或RNN组件，<span style="color: red;">该模型根据先前的比赛事件和上下文预测下一个比赛事件</span>。我们展示了使用通用的上下文感知模型创建指标作为可部署的实际应用，并演示了使用Seq2Event模型<span style="color: red;">开发poss-util指标的过程</span>。通过总结每次控球期间关键进攻事件（射门、传中）的期望值，我们的指标显示与流行的xG指标在多场比赛中具有较高相关性（r = 0.91，n = 190）。文章展示了poss-util在分析控球行为和比赛中的实际应用实例。此外，我们还讨论了该方法在具有更强序列性的运动中（如英式橄榄球）的潜在应用价值。
@@ -364,7 +363,7 @@ LSTM模型按测试损失标准产生了最佳结果，并且优于具有等效�
 
 建模使用PyTorch完成，我们共享了模型复现的代码[**[28]**](#ref-28)。提供了两个笔记本：一个数据准备和特征工程笔记本，以及一个建模笔记本。
 
-# 参考文献
+## 参考文献
 <a id="ref-1"></a>
 [1] David Adams, Ryland Morgans, Joao Sacramento, Stuart Morgan, and Morgan D Williams. 2013. Successful short passing frequency of defenders differentiates between top and bottom four English Premier League teams. **后卫成功短传频率区分英超联赛前四名和后四名球队**. International Journal of Performance Analysis in Sport 13, 3 (2013), 653–668.
 
