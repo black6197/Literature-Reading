@@ -10,9 +10,9 @@
 足球比赛场地广阔、参赛球员众多、球员换位有限且进球稀疏，可以说是所有主要团队运动项目中分析难度最大的项目。在本研究中,我们开发了一种新方法,用于从逐场比赛事件数据中评估各类足球动作。我们的方法利用深度强化学习(Deep Reinforcement Learning, DRL)模型来学习动作价值Q函数。据我们所知,这是首个基于深度强化学习方法、针对足球动作全集的动作价值函数。我们的神经网络架构通过两个堆叠的LSTM塔来拟合连续的比赛情境信号和一次进攻中的序列特征,主队和客队各使用一个独立的LSTM塔。为验证模型性能,我们展示了所学Q函数的时间和空间投影,并进行了校准实验以研究不同比赛情境下的数据拟合效果。我们提出的新颖足球进球影响指标(Goal Impact Metric, GIM)应用了所学Q函数的数值,通过汇总球员在一个赛季所有比赛中各项动作的影响值来衡量其整体表现。为解释这些影响值,我们构建了一个模仿回归树,以找出对这些数值影响最大的比赛特征。作为GIM指标的应用示例,我们进行了一项案例研究,对英格兰足球冠军联赛的球员进行排名。实证评估表明,GIM是一个时间稳定的指标,且其与足球成功标准衡量指标的相关性高于其他最先进足球指标的相关性。
 
 # 1 引言：行动价值与球员评估  
-体育统计的一项重要任务是球员评估，这有助于深入理解球员的表现[（Schumaker et al.2010）](#ref-22)。绩效评估对球队管理和球迷参与至关重要。例如，梦幻联赛允许球迷根据球员的技术和表现来选拔或组建心仪的球队。随着高频追踪系统和目标检测算法的出现，职业体育中球员移动数据日益丰富，这为利用大规模机器学习建模复杂赛事动态并评估球员表现提供了更多可能。近年来已提出多种评估指标，最常用的方法是通过量化球员行动的价值进行评估（McHale等，2012；Decroos等，2019）。  
+体育统计的一项重要任务是球员评估，这有助于深入理解球员的表现[（Schumaker等，2010）](#ref-28)。绩效评估对球队管理和球迷参与至关重要。例如，梦幻联赛允许球迷根据球员的技术和表现来选拔或组建心仪的球队。随着高频追踪系统和目标检测算法的出现，职业体育中球员移动数据日益丰富，这为利用大规模机器学习建模复杂赛事动态并评估球员表现提供了更多可能。近年来已提出多种评估指标，最常用的方法是通过量化球员行动的价值进行评估（[McHale等，2012](#ref-19)；[Decroos等，2019](#ref-9)）。  
 
-传统体育评估方法面临两大问题：（1）许多球员评估指标（如预期进球）仅关注对进球有直接影响的动作（例如射门），而忽略了具有显著长期效应的其他行为。这一局限在得分稀疏的赛事中更为突出，例如足球比赛常以零进球或一球告终。（2）传统方法倾向于为动作分配固定价值，忽略比赛情境差异。为应对这些问题，Routley和Schulte（2015）构建了冰球比赛的马尔可夫模型，通过计算每个动作的Q值来捕捉比赛情境。Q值用于估算在特定比赛情境下，执行某一动作后球队得分的概率。  
+传统体育评估方法面临两大问题：（1）许多球员评估指标（如预期进球）仅关注对进球有直接影响的动作（例如射门），而忽略了具有显著长期效应的其他行为。这一局限在得分稀疏的赛事中更为突出，例如足球比赛常以零进球或一球告终。（2）传统方法倾向于为动作分配固定价值，忽略比赛情境差异。为应对这些问题，[Routley和Schulte（2015）](#ref-24)构建了冰球比赛的马尔可夫模型，通过计算每个动作的Q值来捕捉比赛情境。Q值用于估算在特定比赛情境下，执行某一动作后球队得分的概率。  
 
 足球被公认为主要团队运动中分析难度最高的项目（Bornn等，2018）。其比赛情境比冰球更为复杂：场上球员更多（22人）、场地更大（长350英尺，宽150英尺）、比赛时间更长（90分钟），这些因素导致各队形成复杂的时空分布模式。本文应用深度强化学习（DRL）从足球赛事数据中学习动作价值Q函数，提出双塔堆叠LSTM结构分别捕捉主客队的动态特征。与强化学习中旨在学习最优策略的传统控制问题不同，我们在被动学习（同策略）设定下解决预测问题。基于习得的Q函数，我们提出两种衡量球员表现的指标并从理论上证明其一致性：  
 
@@ -378,74 +378,106 @@ QAAR指标将给定球员i下一个行动的预期未来总奖励与给定随机
 最终结论(11)应用了方程(7)。
 
 ##**References**  
-
+<a id="ref-1"></a>
 Albert J, Glickman ME, Swartz TB, Koning RH (2017) Handbook of Statistical Methods and Analyses in Sports. CRC Press, Boca Raton 
 
+<a id="ref-2"></a>
 Ali A (2011) Measuring soccer skill performance: a review. Scand J Med Scin Sports 21(2):170–183 
 
+<a id="ref-3"></a>
 Ba J, Caruana R (2014) Do deep nets really need to be deep? In: Advances in Neural Information Processing Systems, pp 2654–2662 
 
+<a id="ref-4"></a>
 Bornn L, Cervone D, Fernandez J (2018) Soccer analytics: unravelling the complexity of “the beautiful game”. Significance 15(3):26–29 
 
+<a id="ref-5"></a>
 Bransen L, Van Haaren J (2018) Measuring football players’ on-the-ball contributions from passes during games. In: Machine Learning and Data Mining for Sports Analytics, Proceedings of the 5th International Workshop. Springer, pp 3–15 
 
+<a id="ref-6"></a>
 Brooks J, Kerr M, Guttag J (2016) Developing a data-driven player ranking in soccer using predictive model weights. In: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, pp 49–55 
 
+<a id="ref-7"></a>
 Cervone D, D’Amour A, Bornn L, Goldsberry K (2014) Pointwise: predicting points and valuing decisions in real time with NBA optical tracking data. In: Proceedings of the 8th Annual MIT Sloan Sports Analytics Conference, vol 28 
 
+<a id="ref-8"></a>
 Cervone D, D’Amour A, Bornn L, Goldsberry K (2016) A multiresolution stochastic process model for predicting basketball possession outcomes. J Am Stat Assoc 111(514):585–599 
 
+<a id="ref-9"></a>
 Decroos T, Bransen L, Haaren JV, Davis J (2019) Actions speak louder than goals: valuing player actions in soccer. In: Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2019, Anchorage, AK, USA, August 4–8, 2019, pp 1851–1861 
 
+<a id="ref-10"></a>
 Dick U, Brefeld U (2019) Learning to rate player positioning in soccer. Big Data 7(1):71–82 
 
+<a id="ref-11"></a>
 Fernández J, Barcelona F, Bornn L, Cervone D (2019) Decomposing the immeasurable sport: a deep learning expected possession value framework for soccer. In: Proceedings MIT Sloan Sports Analytics Conference 
 
+<a id="ref-12"></a>
 Gudmundsson J, Horton M (2017) Spatio-Temporal Analysis of Team Sports. ACM Comput Surv 50(2):22:1–22:34. [https://doi.org/10.1145/3054132](https://doi.org/10.1145/3054132) 
 
+<a id="ref-13"></a>
 Hausknecht MJ, Stone P (2015) Deep recurrent Q-learning for partially observable MDPS. In: Proceedings of the 2015 AAAI Fall Symposia, Arlington, Virginia, USA, November 12–14, 2015, pp 29–37. CoRR. arXiv:1507.06527 
 
+<a id="ref-14"></a>
 Kharrat T, McHale IG, Peña JL (2019) Plus-minus player ratings for soccer. Eur J Oper Res 283:726–736 
 
+<a id="ref-15"></a>
 Liu G, Schulte O (2018) Deep reinforcement learning in ice hockey for context-aware player evaluation. In: Proceedings of the 27th International Joint Conference on Artificial Intelligence, IJCAI-18, [ijcai.org](http://ijcai.org/), pp 3442–3448 
 
+<a id="ref-16"></a>
 Liu G, Zhu W, Schulte O (2018) Interpreting deep sports analytics: Valuing actions and players in the NHL. In: International workshop on machine learning and data mining for sports analytics. Springer, pp 69–81 
 
+<a id="ref-17"></a>
 Macdonald B (2011) A regression-based adjusted plus-minus statistic for NHL players. J Quant Anal Sports 7(3):29 
 
+<a id="ref-18"></a>
 McCallum A (1996) Learning to use selective attention and short-term memory in sequential tasks. In: From animals to animats 4: proceedings of the fourth international conference on simulation of adaptive behavior, vol 4. MIT Press, p 315 
 
+<a id="ref-19"></a>
 McHale IG, Scarf PA, Folker DE (2012) On the development of a soccer player performance rating system for the english premier league. Interfaces 42(4):339–351 
 
+<a id="ref-20"></a>
 Mnih V, Kavukcuoglu K, Silver D et al (2015) Human-level control through deep reinforcement learning. Nature 518(7540):529–533 
 
+<a id="ref-21"></a>
 Ng AY, Harada D, Russell S (1999) Policy invariance under reward transformations: theory and application to reward shaping. Proceedings of the 16th International Conference on Machine Learning (ICML 1999), Bled, Slovenia, pp. 278–287 Puterman 
 
+<a id="ref-22"></a>
 ML, Patrick J (2017) Dynamic programming. In: Encyclopedia of machine learning and data mining, pp 377–388 
 
+<a id="ref-23"></a>
 Routley K (2015) A markov game model for valuing player actions in ice hockey. Master’s thesis, Simon Fraser University 
 
+<a id="ref-24"></a>
 Routley K, Schulte O (2015) A markov game model for valuing player actions in ice hockey. In: Proceedings of the International Conference on Uncertainty in Artificial Intelligence (UAI), pp 782–791 
 
+<a id="ref-25"></a>
 Schulte O, Khademi M, Gholami S, Zhao Z, Javan M, Desaulniers P (2017a) A markov game model for valuing actions, locations, and team performance in ice hockey. Data Mining and Knowledge Discovery, pp 1–23 
 
+<a id="ref-26"></a>
 Schulte O, Zhao Z, Javan M, Desaulniers P (2017b) Apples-to-apples: clustering and ranking NHL players using location information and scoring impact. In: Proceedings MIT Sloan Sports Analytics Conference 
 
+<a id="ref-27"></a>
 Schultze SR, Wellbrock CM (2018) A weighted plus/minus metric for individual soccer player performance. J Sports Anal 4(2):121–131 
 
-<a id="ref-22"></a>
+<a id="ref-28"></a>
 Schumaker RP, Solieman OK, Chen H (2010) Research in sports statistics. Sports Data Mining, Integrated Series in Information Systems, vol 26. Springer, US, pp 29–44 
 
+<a id="ref-29"></a>
 Song Y, Xu M, Zhang S, Huo L (2017) Generalization tower network: A novel deep neural network architecture for multi-task learning. arXiv preprint arXiv:1710.10036 
 
+<a id="ref-30"></a>
 Sutton RS, Barto AG (2018) Reinforcement learning: an introduction. MIT Press, Cambridge 
 
+<a id="ref-31"></a>
 Swartz TB, Arce A (2014) New insights involving the home team advantage. Int J Sports Sci Coach 9(4):681–692 
 
+<a id="ref-32"></a>
 Tsitsiklis JN, Van Roy B (1997) Analysis of temporal-diffference learning with function approximation. In: Advances in Neural Information Processing Systems, pp 1075–1081 
 
+<a id="ref-33"></a>
 Van Haaren J, Van den Broeck G, Meert W, Davis J (2016) Lifted generative learning of markov logic networks. Mach Learn 103(1):27–55 
 
+<a id="ref-34"></a>
 Van Roy M, Robberechts P, Decroos T, Davis J (2017) Valuing on-the-ball actions in soccer: a critical comparison of XT and VAEP. In: Workshop on Team Sports AAAI 2020  
 
 
