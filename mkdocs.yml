@@ -22,7 +22,13 @@ nav:
     - 足球分析:
       - papers/soccer-analytics/index.md # VAEP2019
       - papers/soccer-analytics/Seq2Event2022.md  # 2025/11/14新增
-      - papers/soccer-analytics/Deep_soccer_analytics2020.md  # 新增
+      - papers/soccer-analytics/Deep_soccer_analytics2020.md  # 2025/11/14新增
+      - papers/soccer-analytics/Player_Tracking_Data_in_Sports2023.md  # 2025/11/22新增
+      - papers/soccer-analytics/un-xPass2023.md  # 2025/11/22新增
+      - papers/soccer-analytics/A_Bayesian_Approach_to_In-Game_Win_Probability_in_Soccer2021.md  # 2025/11/22新增
+      - papers/soccer-analytics/Cracking_the_Black_Box2020.md  # 2025/11/22新增
+      - papers/soccer-analytics/LLM-Commentator2024.md  # 2025/11/22新增
+      - papers/soccer-analytics/TacticAI2025.md  # 2025/11/22新增
   - 读书笔记:
     - notes/index.md
   - 待读清单: reading-list.md
